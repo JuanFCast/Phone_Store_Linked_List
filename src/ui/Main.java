@@ -27,11 +27,12 @@ public class Main {
 		System.out.println("element number: " + ps.size());
 		*/
 		
-		ps.addPhoneHead("1", "Nokia", 700000);
-		ps.addPhoneHead("4", "iPhone", 4000000);
-		ps.addPhoneHead("3", "Xiaomi", 1500000);
-		ps.addPhoneHead("8", "Realme", 1300000);
-		ps.addPhoneHead("2", "Huawei", 2600000);
+		ps.addSorted("1", "Nokia", 700000);
+		ps.addSorted("4", "iPhone", 4000000);
+		ps.addSorted("3", "Xiaomi", 1500000);
+		ps.addSorted("8", "Realme", 1300000);
+		ps.addSorted("2", "Huawei", 2600000);
+		printListCost();
 		System.out.println();
 		printListPhone();
 	}
@@ -62,7 +63,7 @@ public class Main {
 	
 	
 
-	public static void printOrdenadosCost() {
+	public static void printListCost() {
 
 		Phone last = ps.getFirst();
 

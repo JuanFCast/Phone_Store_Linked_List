@@ -6,6 +6,8 @@ public class Phone {
 	private double cost;
 	
 	private Phone next; // arranca en null
+	private Phone prev; // arranca en null
+	
 	public Phone(String model, String brand, double cost) {
 		this.model = model;
 		this.brand = brand;
@@ -31,6 +33,14 @@ public class Phone {
 	
 	public void setNext(Phone next) {
 		this.next = next;
+	}
+
+	public Phone getPrev() {
+		return prev;
+	}
+
+	public void setPrev(Phone prev) {
+		this.prev = prev;
 	}
 
 
